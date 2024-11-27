@@ -32,6 +32,7 @@ public class EmployeeController {
                   BindingResult result
                     )
     {
+        System.out.println("100");
         if (result.hasErrors()){
            return  new  ResponseEntity<>(result.getFieldError().getDefaultMessage(),HttpStatus.NOT_FOUND);
         }
